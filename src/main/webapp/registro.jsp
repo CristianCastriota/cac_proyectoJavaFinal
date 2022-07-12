@@ -21,7 +21,7 @@
     <main>
 
 
-        <form id="form">
+        <form method="post" action="registro" id="form">
             <h1>Registrarte</h1>
             <div id="nombres">
                 <input type="text" id="nombre" value="" name="nombre" placeholder="Nombre" >
