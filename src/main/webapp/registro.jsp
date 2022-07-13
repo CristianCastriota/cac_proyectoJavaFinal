@@ -21,7 +21,7 @@
     <main>
 
 
-        <form method="post" action="registro" id="form">
+        <form method="post" action="register" id="form">
             <h1>Registrarte</h1>
             <div id="nombres">
                 <input type="text" id="nombre" value="" name="nombre" placeholder="Nombre" >
@@ -43,7 +43,7 @@
             <p class="text-danger mb-2 d-none" id="alertDomicilio"></p>
             <input type="text" id="codigoPostal" name="codigo_postal" placeholder="Código Postal">
             <p class="text-danger mb-2 d-none" id="alertCodigoPostal"></p>
-            <input type="password" id="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="La contraseña debe tener al menos una mayúscula, una minúscula y un número." placeholder="Contraseña">
+            <input type="password" name="pass" id="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="La contraseña debe tener al menos una mayúscula, una minúscula y un número." placeholder="Contraseña">
             <input type="password" id="confirmaPass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="La contraseña debe tener al menos una mayúscula, una minúscula y un número." placeholder="Confirma tu contraseña">
             <p class="text-danger mb-2 d-none" id="alertPass"></p>
             <button type="submit" class="btn btn-primary">Registrarse</button>
@@ -60,7 +60,7 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- <script src="./js/index.js"></script> -->
-    <script src="./js/registro.js"></script>
+<!--     <script src="./js/registro.js"></script> -->
 </body>
 
 </html>

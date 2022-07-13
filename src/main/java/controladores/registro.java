@@ -36,7 +36,7 @@ public class registro extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e_store?useSSL=false", "root", "12345678");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e_store?useSSL=false", "root", "xxxxxx");
 			final String STATEMENT = "insert into usuarios (nombre, apellido, email, clave) values (?,?,?,?)";
 			PreparedStatement pst = con.prepareStatement(STATEMENT);
 			pst.setString(1, unombre);

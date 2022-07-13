@@ -158,7 +158,7 @@ formulario.addEventListener("submit", (evento) => {
     pintarMensajeExito(); 
                      
     function redirigir(){
-        window.location.href = '../login.jsp';
+        window.location.href = './login.jsp';
       }
       
       setTimeout(redirigir, 2000);
