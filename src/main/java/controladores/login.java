@@ -25,23 +25,23 @@ public class login extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String uname = request.getParameter("username");
-		String upwd = request.getParameter("password");
+		String uname = request.getParameter("email");
+		String upwd = request.getParameter("pass");
 		HttpSession session = request.getSession();
 		RequestDispatcher disp = null;
 		
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/comision_22030?useSSL=false", "root", "12345678");
-			final String QUERY = "select * from users where name = ? and pass = ?";
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e_store?useSSL=false", "root", "casa1234");
+			final String QUERY = "select * from usuarios where email = ? and clave = ?";
 			PreparedStatement ps = con.prepareStatement(QUERY);
 			ps.setString(1, uname);
 			ps.setString(2, upwd);
 			ResultSet rs = ps.executeQuery();
 			
 			if (rs.next()) {
-				session.setAttribute("name", rs.getString(1));
+				session.setAttribute("email", rs.getString(1));
 				disp = request.getRequestDispatcher("index.jsp");
 			} else {
 				request.setAttribute("status", "failed");
