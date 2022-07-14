@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%
+	if(session.getAttribute("email") == null){
+		response.sendRedirect("login.jsp");
+	} 
+    System.out.println(session.getAttribute("email"));
+%>
 <!DOCTYPE html>
 <html lang="es">
 

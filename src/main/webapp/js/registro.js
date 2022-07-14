@@ -79,47 +79,47 @@ formulario.addEventListener("submit", (evento) => {
 
 
     //  Validamos fecha de nacimiento
-    if (fechaNacimiento.value == "") {
-        errores.push({
-            tipo: alertFechaNacimiento,
-            msg: "Ingrese la fecha de su nacimiento",
-        });
-    } else {
-        alertFechaNacimiento.classList.add("d-none");
-    }
+//    if (fechaNacimiento.value == "") {
+//        errores.push({
+//            tipo: alertFechaNacimiento,
+//            msg: "Ingrese la fecha de su nacimiento",
+//        });
+//    } else {
+//        alertFechaNacimiento.classList.add("d-none");
+//    }
 
 
     //  Validamos sexo
-    if (sexoMas.checked || sexoFem.checked || sexoOtro.checked) {
-        alertSexo.classList.add("d-none");
-    } else {
-        errores.push({
-            tipo: alertSexo,
-            msg: "Marque su sexo",
-        });
-    }
+//    if (sexoMas.checked || sexoFem.checked || sexoOtro.checked) {
+//        alertSexo.classList.add("d-none");
+//    } else {
+//        errores.push({
+//            tipo: alertSexo,
+//            msg: "Marque su sexo",
+//        });
+//    }
 
 
     //  Validamos domicilio
-    if (domicilio.value == "") {
-        errores.push({
-            tipo: alertDomicilio,
-            msg: "Ingrese su domicilio",
-        });
-    } else {
-        alertDomicilio.classList.add("d-none");
-    }
+//    if (domicilio.value == "") {
+//        errores.push({
+//            tipo: alertDomicilio,
+//            msg: "Ingrese su domicilio",
+//        });
+//    } else {
+//        alertDomicilio.classList.add("d-none");
+//    }
 
 
     //  Validamos código postal
-    if (codigoPostal.value == "") {
-        errores.push({
-            tipo: alertCodigoPostal,
-            msg: "Ingrese su código postal",
-        });
-    } else {
-        alertCodigoPostal.classList.add("d-none");
-    }
+//    if (codigoPostal.value == "") {
+//        errores.push({
+//            tipo: alertCodigoPostal,
+//            msg: "Ingrese su código postal",
+//        });
+//    } else {
+//        alertCodigoPostal.classList.add("d-none");
+//    }
 
 
     // Validamos la contraseña del user
@@ -145,22 +145,25 @@ formulario.addEventListener("submit", (evento) => {
     }
 
 
-    user = {
-        nombre: nombre.value,
-        apellido: apellido.value,
-        email: email.value,
-        password: pass.value
-    }
+//    user = {
+//        nombre: nombre.value,
+//        apellido: apellido.value,
+//        email: email.value,
+//        password: pass.value
+//    }
+//
+//    localStorage.setItem('user', JSON.stringify(user));
 
-    localStorage.setItem('user', JSON.stringify(user));
 
-
-    pintarMensajeExito(); 
+//    pintarMensajeExito(); 
+    
                      
-    function redirigir(){
-        window.location.href = './login.jsp';
-      }
-      
-      setTimeout(redirigir, 2000);
+//    function redirigir(){
+//        window.location.href = './login.jsp';
+//      }
+//      
+//      setTimeout(redirigir, 2000);
+
+	evento.currentTarget.submit();
 
 });

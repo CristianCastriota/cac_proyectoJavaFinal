@@ -19,16 +19,16 @@
 
 
     <main>
-        <form id="form">
+        <form method="post" action="login" id="form">
             <div class="mb-3">
                 <label for="email" class="form-label text-black">Email</label>
-                <input type="email" class="form-control" id="email" required="" placeholder="tunombredecorreo@email.com">
+                <input type="email" class="form-control" id="email" required="" name="email" placeholder="tunombredecorreo@email.com">
                 <div id="emailHelp" class="form-text"> Insertar email registrado</div>
                 <p class="text-danger mb-2 d-none" id="alertEmail"></p>
             </div>
             <div class="mb-3">
                 <label for="pass" class="form-label text-black">Contraseña</label>
-                <input type="password" class="form-control" id="pass" required="" >
+                <input type="password" class="form-control" id="pass" required="" name="pass">
                 <p class="text-danger mb-2 d-none" id="alertPass"></p>
                 <div id="PasswordHelp" class="form-text"> Debe contener entre 6 y 15 caracteres. </div>
             </div> 
@@ -51,7 +51,7 @@
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./js/login.js"></script>
+<!--     <script src="./js/login.js"></script> -->
 </body>
 
 </html>

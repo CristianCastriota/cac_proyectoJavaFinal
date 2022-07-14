@@ -41,7 +41,7 @@ formulario.addEventListener("submit", (evento) => {
 
         errores.push({
             tipo: alertEmail,
-            msg: "Email Inválido", });}
+            msg: "Email incorrecto", });}
         
     else {
         if (userEmail.value.length > 40) {
@@ -64,7 +64,7 @@ formulario.addEventListener("submit", (evento) => {
     if (userPass.value != pass) {
         errores.push({
             tipo: alertPass,
-            msg: "Contraseña Inválida",
+            msg: "Clave incorrecta",
         });
     } else {
         alertPass.classList.add("d-none"); }
@@ -75,5 +75,6 @@ formulario.addEventListener("submit", (evento) => {
 
     console.log("Formulario enviado con éxito");
     pintarMensajeExito();
+    evento.currentTarget.submit();
 
-    });
+});
