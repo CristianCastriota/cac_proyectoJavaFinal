@@ -18,7 +18,7 @@ import java.sql.SQLException;
  */
 @WebServlet("/register")
 public class registro extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L; 
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -36,7 +36,7 @@ public class registro extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e_store?useSSL=false", "root", "casa1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e_store?useSSL=false", "root", "");
 			final String STATEMENT = "insert into usuarios (nombre, apellido, email, clave) values (?,?,?,?)";
 			PreparedStatement pst = con.prepareStatement(STATEMENT);
 			pst.setString(1, unombre);
